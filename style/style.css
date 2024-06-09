@@ -1,0 +1,698 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+}
+    header {
+    width: 15%;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    padding: 1rem 0;
+    text-align: left;
+    box-sizing: border-box;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        padding-left: 1.5rem;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    nav a:hover {
+        background-color: #444;
+    }
+
+
+    main {
+        width: 95%;
+        padding: 2rem;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+    }
+
+    .team-list {
+        padding: 1rem;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .team {
+        background-color: #fff;
+        padding: 1rem;
+        margin: 1rem 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .team h3 {
+        margin: 0 0 0.5rem 0;
+        color: #333;
+    }
+
+    .team p {
+        margin: 0.5rem 0;
+        color: #555;
+    }
+
+    .team ul {
+        padding-left: 1.5rem;
+    }
+
+    .team ul li {
+        list-style-type: disc;
+        color: #333;
+    }
+
+    .team_count {
+        font-weight: normal;
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .team_name {
+        display: inline;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .team_reyting {
+        font-size: 1rem;
+        color: #777;
+    }
+
+    .team_boss {
+        font-size: 1rem;
+        color: #333;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #555;
+    }
+    .users {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .users th,
+    .users td {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+    }
+
+    .users th {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .users tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* User Profile Styles */
+    .user-profile {
+        margin-top: 20px;
+    }
+
+    .user-profile input[type="search"] {
+        padding: 0.5rem;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .user_data td {
+        text-align: center;
+    }
+
+    .user_rating_avatar img,
+    .user_avatar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Colors */
+    .user_name,
+    .user_locus,
+    .user_rating,
+    .user_problem_rating,
+    .user_activity {
+        color: #333;
+    }
+
+    .user_rating_number {
+        color: #007bff;
+    }
+
+    .user_rating_avatar img,
+    .user_avatar img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .user_rating_avatar img {
+        border: 2px solid #007bff;
+    }
+
+    .user_avatar img {
+        border: 2px solid #333;
+    }
+
+    .user_rating_avatar,
+    .user_avatar {
+        width: 60px;
+    }
+
+    .problem_number,
+    .problem_solution,
+    .problem_solved,
+    .problem_star,
+    .problem_name,
+    .problem_difficulty,
+    .problem_category,
+    .problem_ball,
+    .problem_win_count,
+    .problem_attempts_count,
+    .problem_lose_count,
+    .problem_division_count {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-weight: bold;
+    }
+
+    .problem_name,
+    .problem_category,
+    .problem_division_count {
+        text-align: left;
+    }
+
+    thead th {
+        background-color: #f2f2f2;
+    }
+    input[type="search"] {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 0.75rem;
+        text-align: center;
+    }
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tbody td {
+        border-top: 1px solid #ddd;
+    }
+
+    .problem_name, .problem_category, .problem_division_count {
+        text-align: left;
+    }
+    .attempts_number,
+    .attempts_user,
+    .attempts_problem_name,
+    .attempts_languages,
+    .attempts_status,
+    .attempts_time,
+    .attempts_memory,
+    .attempts_submit_time,
+    .attempts_last_time {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+        font-weight: bold;
+    }
+
+    .attempts_name,
+    .attempts_category,
+    .attempts_division_count {
+        text-align: left;
+    }
+    form {
+        width: 30%;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        width: 80%;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    label span {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    form {
+        margin-top: 50px;
+    }
+
+    .site_team_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .site_team_user {
+        width: 300px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .site_team_user_name {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .site_team_user_bio {
+        margin-bottom: 10px;
+    }
+
+    .profels {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .profel a {
+        display: block;
+    }
+
+    .profel img {
+        width: 30px;
+        height: 30px;
+    }
+    .avatar img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #333;
+        margin-bottom: 10px;
+    }
+    /* Input and Form Styles */
+    input[type="search"],
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    form {
+        width: 400px;
+        margin: 50px auto 0;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    /* Button Styles */
+    button {
+        padding: 0.5rem 1rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .blog-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .blog-card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1 1 calc(25% - 20px); /* Adjust width to fit four cards in a row */
+        box-sizing: border-box;
+    }
+
+    .blog-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .blog-description {
+        margin-bottom: 10px;
+    }
+
+    .blog-tags {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .blog-time {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .time {
+        font-style: italic;
+    }
+    main {
+        width: 80%;
+        padding: 2rem;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+    }
+
+    .site_team_list {
+        height: 313px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .site_team_user {
+        width: 20%;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .site_team_user_name {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .site_team_user_bio {
+        margin-bottom: 10px;
+    }
+
+    .site_team_user a {
+        display: block;
+        margin: 5px 0;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .site_team_user a:hover {
+        text-decoration: underline;
+    }
+
+    .oauth-buttons {
+        margin-top: 10px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .oauth-button img {
+        width: 30px;
+        height: 30px;
+        transition: width 0.3s ease, height 0.3s ease;
+    }
+
+    .oauth-button img:hover {
+        width: 40px;
+        height: 40px;
+    }
+    .container {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+
+    form {
+        margin: 1px;
+        background: $white;
+      padding: 3em;
+      height: 400px;
+      border-radius: 20px;
+      border-left: 1px solid $white;
+      border-top: 1px solid $white;
+      backdrop-filter: blur(10px);
+      box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+    }
+
+    form p {
+      font-weight: 500;
+      color: #333;
+      opacity: 0.7;
+      font-size: 1.4rem;
+      margin-top: 0;
+      margin-bottom: 60px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    form a {
+      text-decoration: none;
+      color: #222;
+      font-size: 12px;
+    }
+
+    form a:hover {
+      text-shadow: 2px 2px 6px #00000040;
+    }
+
+    form a:active {
+      text-shadow: none;
+    }
+
+    form input {
+      background: transparent;
+      width: 200px;
+      padding: 1em;
+      margin-bottom: 2em;
+      border: none;
+      border-left: 1px solid $white;
+      border-top: 1px solid $white;
+      border-radius: 5000px;
+      backdrop-filter: blur(5px);
+      box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+      color: #111;
+      font-family: Montserrat, sans-serif;
+      font-weight: 500;
+      transition: all 0.2s ease-in-out;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    form input:hover {
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    form input[type="email"],
+    form input[type="password"]:focus {
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    form input[type="button"] {
+      margin-top: 10px;
+      width: 150px;
+      font-size: 1rem;
+    }
+
+    form input[type="button"]:hover {
+      cursor: pointer;
+    }
+
+    form input[type="button"]:active {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    ::placeholder {
+      font-family: Montserrat, sans-serif;
+      font-weight: 400;
+      color: #777;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .drop {
+      background: $white;
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      border-left: 1px solid $white;
+      border-top: 1px solid $white;
+      box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.2);
+      position: absolute;
+      transition: all 0.2s ease;
+    }
+
+    a,
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+      outline: none;
+    }
+
+    @keyframes floaty {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+    @keyframes floatx {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-20px);
+      }
+    }
+
+    form:hover {
+      transform: scale(1.05);
+    }
+@media screen and (max-width: 1100px) {
+    .nav_1 {
+        display: none;
+    }
+    .nav_2 {
+        display: block;
+    }
+    .drop-1,.drop-2,.drop-3,.drop-4,.drop-5 {display: none;}
+}
+@media screen and (min-width: 1100px) {
+    .nav_1 {
+        display: block;
+    }
+    .nav_2 {
+        display: none;
+    }
+    .drop-1 {
+      height: 80px;
+      width: 80px;
+      top: -20px;
+      left: -40px;
+      z-index: -1;
+      animation: floatx 5s infinite ease-in-out;
+      animation-duration: 6s;
+    }
+
+    .drop-2 {
+      height: 80px;
+      width: 80px;
+      bottom: -30px;
+      right: -10px;
+      animation: floaty 5s infinite ease-in-out;
+      animation-duration: 7s;
+    }
+
+    .drop-3 {
+      height: 100px;
+      width: 100px;
+      bottom: 120px;
+      right: -50px;
+      z-index: -1;
+      animation: floatx 5s infinite ease-in-out;
+      animation-duration: 5s;
+    }
+
+    .drop-4 {
+      height: 120px;
+      width: 120px;
+      top: -60px;
+      right: -60px;
+      animation: floaty 5s infinite ease-in-out;
+      animation-duration: 8s;
+    }
+
+    .drop-5 {
+      height: 60px;
+      width: 60px;
+      bottom: 170px;
+      left: 90px;
+      z-index: -1;
+      animation: floaty 5s infinite ease-in-out;
+      animation-duration: 6s;
+    }
+}
